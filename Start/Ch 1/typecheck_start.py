@@ -19,9 +19,12 @@ n1 = Newspaper("The Washington Post")
 n2 = Newspaper("The New York Times")
 
 # TODO: use type() to inspect the object type
-
+print(type(b1.title))
 
 # TODO: compare two types together
+if (type(b1.title) == type(b1.title)):
+    print("same type")
 
 
 # TODO: use isinstance to compare a specific instance to a known type
+print(isinstance(b1, int))

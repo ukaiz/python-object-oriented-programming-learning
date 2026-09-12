@@ -4,19 +4,21 @@
 
 class A:
     def __init__(self):
-        super().__init__()
         self.prop1 = "prop1"
 
 
-class B:
+class B(A):
     def __init__(self):
         super().__init__()
         self.prop2 = "prop2"
 
 
-class C(A, B):
+class C(B):
     def __init__(self):
         super().__init__()
-
+    def str(self):
+        return f"{self.prop1} {self.prop2}"
 
 c = C()
+b = B()
+print(c.prop1)
